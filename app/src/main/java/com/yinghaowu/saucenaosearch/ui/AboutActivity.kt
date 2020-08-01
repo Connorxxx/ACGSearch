@@ -26,13 +26,18 @@ class AboutActivity : AppCompatActivity() {
             val url = "https://www.pixiv.net/artworks/69554856"
             val builder = CustomTabsIntent.Builder()
             builder.setToolbarColor(getColor(R.color.lightColorPrimary))
-            val customTabsIntent = builder.build()
-            customTabsIntent.launchUrl(this, url.toUri())
+            builder.build().launchUrl(this, url.toUri())
         }
         feed_back.setOnClickListener {
             val intent = Intent(Intent.ACTION_SENDTO)
             intent.data = "mailto:wyh2542367414d@gmail.com".toUri()
             startActivity(intent)
+        }
+        github.setOnClickListener {
+            val url = "https://github.com/wuyinghao1/ACGSearch"
+            val builder = CustomTabsIntent.Builder()
+            builder.setToolbarColor(getColor(R.color.lightColorPrimary))
+            builder.build().launchUrl(this, url.toUri())
         }
     }
 

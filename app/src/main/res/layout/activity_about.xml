@@ -86,11 +86,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+            <include layout="@layout/developer_card" />
+
             <include layout="@layout/explain_card" />
 
             <include layout="@layout/explain2_card" />
 
-            <include layout="@layout/developer_card" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

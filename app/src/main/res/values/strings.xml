@@ -36,4 +36,6 @@
     <string name="explain2_card">default image is from <font color='#2196F3'>https://www.pixiv.net/artworks/69554856</font>\n\nPixiv user: snatti\n\nPixiv id: 3143520</string>
     <string name="feedback">Feedback</string>
     <string name="feedback_detail">If you find a bug or want new features to be added, please report it</string>
+    <string name="github" translatable="false">Github</string>
+    <string name="github_detail">Fork the project on Github</string>
 </resources>

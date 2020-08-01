@@ -37,4 +37,5 @@
     <string name="explain2_card">默认图片来自 <font color='#2196F3'>https://www.pixiv.net/artworks/69554856</font>\n\nPixiv user: snatti\n\nPixiv id: 3143520</string>
     <string name="feedback">反馈</string>
     <string name="feedback_detail">如果您遇到问题，请与我联系</string>
+    <string name="github_detail">在 GitHub 上克隆项目</string>
 </resources>
