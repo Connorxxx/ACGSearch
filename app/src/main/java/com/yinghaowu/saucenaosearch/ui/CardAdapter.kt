@@ -68,7 +68,7 @@ class CardAdapter(
                     Log.d("nonAddedLink",
                         "onBindViewHolder: ${jsonFeeds.results[position].data.source}")
                     Log.d("nonAddedLink", "index_id: ${jsonFeeds.results[position].header.index_id}")
-                    Toast.makeText(ctx, jsonFeeds.results[position].data.source, Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(ctx, jsonFeeds.results[position].data.source, Toast.LENGTH_SHORT).show()
                 }
             }
             holder.ext_urls = jsonFeeds.results[position].data.ext_urls

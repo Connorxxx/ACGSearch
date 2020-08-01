@@ -38,4 +38,6 @@
     <string name="feedback_detail">If you find a bug or want new features to be added, please report it</string>
     <string name="github" translatable="false">Github</string>
     <string name="github_detail">Fork the project on Github</string>
+    <string name="how_to_use">How to use</string>
+    <string name="how_to_use_detail">Select a picture or picture link, and select \"Image Search\" in the share menu</string>
 </resources>

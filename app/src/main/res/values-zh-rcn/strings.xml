@@ -38,4 +38,6 @@
     <string name="feedback">反馈</string>
     <string name="feedback_detail">如果您遇到问题，请与我联系</string>
     <string name="github_detail">在 GitHub 上克隆项目</string>
+    <string name="how_to_use">如何使用</string>
+    <string name="how_to_use_detail">选择图片或者图片链接在分享菜单中选择「图片搜索」</string>
 </resources>
