@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">ACG Search</string>
+    <string name="image">image</string>
+    <string name="similarity">Similarity: %1$s</string>
+
+    <!--        list item        -->
+    <string name="title_empty">no Title</string>
+    <string name="source_empty">no source</string>
+
+    <!--        SnackBar        -->
+    <string name="ip_exceeded_limit">Your IP has exceeded limit of 200 searches</string>
+    <string name="snack_server_errors">SauceNao server errors. Results might be wrong!</string>
+    <string name="snack_wrong_url">Not supported URL.</string>
+
+    <!--        others        -->
+    <string name="thirdPartySite">3rd party</string>
+    <string name="pixiv">Site: Pixiv</string>
+    <string name="twitter">Site: Twitter</string>
+    <string name="exhentai">Site: Exhentai</string>
+    <string name="anidb">Site: Anidb</string>
+    <string name="deviantart">Site: Deviantart</string>
+    <string name="imdb">Site: IMDb</string>
+    <string name="gelbooru">Site: Gelbooru</string>
+    <string name="sankakucomplex">Site: Sankaku</string>
+    <string name="imageSearch">Image Search</string>
+    <string name="nijie">Nijie</string>
+    <string name="nico">Nico Nico</string>
+    <string name="isNull">Invalid Data</string>
+    <string name="unknown_title">Unknown Title</string>
+    <string name="unknown_site">Site: Unknown</string>
+    <string name="about">About</string>
+    <string name="version">Version 1.0</string>
+    <dimen name="guideline2">266dp</dimen>
+    <string name="network_error">Network Error, Please retry</string>
+    <string name="explain_card">All search features are provide by SauceNao API, not this app.\n\nIf you love this app, Please consider donate to SauceNao.</string>
+    <string name="explain2_card">default image is from <font color='#2196F3'>https://www.pixiv.net/artworks/69554856</font>\n\nPixiv user: snatti\n\nPixiv id: 3143520</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedback_detail">If you find a bug or want new features to be added, please report it</string>
+</resources>

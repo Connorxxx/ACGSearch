@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">小熊搜图</string>
+    <string name="image">图片</string>
+    <string name="similarity">相似度: %1$s</string>
+
+    <!--        list item        -->
+    <string name="title_empty">無題</string>
+    <string name="source_empty">空资源</string>
+
+    <!--        SnackBar        -->
+    <string name="ip_exceeded_limit">您的IP超过每天 200 搜索限制</string>
+    <string name="snack_server_errors">SauceNao 服务出错. 结果可能不正确!</string>
+    <string name="snack_wrong_url">不支持的URL, 请检查.</string>
+
+    <!--        others        -->
+    <string name="thirdPartySite">3rd party</string>
+    <string name="pixiv">来源: Pixiv</string>
+    <string name="twitter">来源: Twitter</string>
+    <string name="exhentai">来源: Exhentai</string>
+    <string name="anidb">来源: Anidb</string>
+    <string name="deviantart">来源: Deviantart</string>
+    <string name="imdb">来源: IMDb</string>
+    <string name="gelbooru">来源: Gelbooru</string>
+    <string name="sankakucomplex">来源: Sankaku</string>
+    <string name="imageSearch">图片搜索</string>
+    <string name="nijie">Nijie</string>
+    <string name="nico">Nico Nico</string>
+    <string name="isNull">无效数据</string>
+    <string name="unknown_title">未知</string>
+    <string name="unknown_site">来源: 未知</string>
+    <string name="about">关于</string>
+    <string name="version">Version 1.0</string>
+    <dimen name="guideline2">276dp</dimen>
+    <string name="network_error">网络错误, 请重试</string>
+    <string name="explain_card">所有搜索功能均由SauceNao API提供，而非此应用。\n\n如果您喜欢此应用程序，请考虑捐赠给SauceNao。</string>
+    <string name="explain2_card">默认图片来自 <font color='#2196F3'>https://www.pixiv.net/artworks/69554856</font>\n\nPixiv user: snatti\n\nPixiv id: 3143520</string>
+    <string name="feedback">反馈</string>
+    <string name="feedback_detail">如果您遇到问题，请与我联系</string>
+</resources>
