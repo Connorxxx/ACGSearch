@@ -48,7 +48,7 @@ class CardAdapter(
             .load(jsonFeeds.results[position].header.thumbnail)
             .into(holder.view.imgMain)
 
-        //Danbooru 9 / Gelbooru / yande.re 12
+        //Danbooru 9 Gelbooru yande.re
         val index3rd = arrayOf(9, 12, 26)
         if (jsonFeeds.results[position].header.index_id in index3rd) {
             holder.view.stTitle.text = jsonFeeds.results[0].data.title ?: ctx.getString(R.string.title_empty)

@@ -33,11 +33,11 @@
     <string name="version">Version 1.0</string>
     <dimen name="guideline2">276dp</dimen>
     <string name="network_error">网络错误, 请重试</string>
-    <string name="explain_card">所有搜索功能均由SauceNao API提供，而非此应用。\n\n如果您喜欢此应用程序，请考虑捐赠给SauceNao。</string>
+    <string name="explain_card">所有搜索功能均由SauceNao API提供，而非此应用。\n如果您喜欢此应用程序，请考虑捐赠给SauceNao。</string>
     <string name="explain2_card">默认图片来自 <font color='#2196F3'>https://www.pixiv.net/artworks/69554856</font>\n\nPixiv user: snatti\n\nPixiv id: 3143520</string>
     <string name="feedback">反馈</string>
     <string name="feedback_detail">如果您遇到问题，请与我联系</string>
     <string name="github_detail">在 GitHub 上克隆项目</string>
     <string name="how_to_use">如何使用</string>
-    <string name="how_to_use_detail">选择图片或者图片链接在分享菜单中选择「图片搜索」</string>
+    <string name="how_to_use_detail">·选择图片或者图片链接在分享菜单中选择「图片搜索」\n·按下上传按钮选择图片\n(部分结果可能需要科学上网才能访问)</string>
 </resources>
