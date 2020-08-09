@@ -35,7 +35,6 @@
     <string name="unknown_site">Site: Unknown</string>
     <string name="about">About</string>
     <string name="version" translatable="false">Version 2.0</string>
-    <dimen name="guideline2">266dp</dimen>
     <string name="network_error">Network Error, Please retry</string>
     <string name="explain_card">All search features are provide by SauceNao API, not this app.\nIf you love this app, Please consider donate to SauceNao.</string>
     <string name="explain2_card">default image is from <font color='#2196F3'>https://www.pixiv.net/artworks/69554856</font>\n\nPixiv user: snatti\n\nPixiv id: 3143520</string>

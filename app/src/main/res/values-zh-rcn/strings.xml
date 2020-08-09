@@ -34,7 +34,6 @@
     <string name="unknown_title">未知</string>
     <string name="unknown_site">网站: 未知</string>
     <string name="about">关于</string>
-    <dimen name="guideline2">276dp</dimen>
     <string name="network_error">网络错误, 请重试</string>
     <string name="explain_card">所有搜索功能均由SauceNao API提供，而非此应用。\n如果您喜欢此应用程序，请考虑捐赠给SauceNao。</string>
     <string name="explain2_card">默认图片来自 <font color='#2196F3'>https://www.pixiv.net/artworks/69554856</font>\n\nPixiv user: snatti\n\nPixiv id: 3143520</string>
