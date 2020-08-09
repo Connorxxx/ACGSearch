@@ -1,13 +1,37 @@
 package com.yinghaowu.saucenaosearch.logic.network
 
-import okhttp3.*
+import okhttp3.MultipartBody
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import kotlin.coroutines.resume
+import kotlin.coroutines.resumeWithException
+import kotlin.coroutines.suspendCoroutine
+
 
 object SauceNaoNetwork {
 
-    fun getResponseJson(request: Request, callback: Callback) {
-        val okHttp = OkHttpClient()
-        okHttp.newCall(request).enqueue(callback)
+    private val sauceNaoService = ServiceCreator.create<SauceNaoService>()
+
+    suspend fun searchSauceNao(url: String) =
+        sauceNaoService.searchSauce(url).await()
+
+    suspend fun postImage(multipartBody: MultipartBody) =
+        sauceNaoService.postImage(multipartBody).await()
+
+    private suspend fun <T> Call<T>.await(): T {
+        return suspendCoroutine {
+            enqueue(object : Callback<T> {
+                override fun onFailure(call: Call<T>, t: Throwable) {
+                    it.resumeWithException(t)
+                }
+
+                override fun onResponse(call: Call<T>, response: Response<T>) {
+                    val body = response.body()
+                    if (body != null) it.resume(body)
+                    else it.resumeWithException(RuntimeException("response body is null"))
+                }
+            })
+        }
     }
-
-
 }

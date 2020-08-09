@@ -6,6 +6,7 @@
     <color name="lightColorPrimary">#4285F4</color>
     <color name="lightColorPrimaryDark">#3367D6</color>
     <color name="colorStatusDark">#1F000000</color>
+    <color name="navigationBar">#FFFAFAFA</color>
 
     <!-- common colors -->
     <color name="transparent">#00000000</color>

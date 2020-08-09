@@ -8,8 +8,8 @@
     <string name="source_empty">no source</string>
 
     <!--        SnackBar        -->
-    <string name="ip_exceeded_limit">Your IP has exceeded limit of 200 searches</string>
-    <string name="snack_server_errors">SauceNao server errors. Results might be wrong!</string>
+    <string name="ip_exceeded_limit">Error, your IP may exceed the 200 limit per day</string>
+    <string name="snack_server_errors">Network error, please try again!</string>
     <string name="snack_wrong_url">Not supported URL.</string>
 
     <!--        others        -->
@@ -22,14 +22,19 @@
     <string name="imdb">Site: IMDb</string>
     <string name="gelbooru">Site: Gelbooru</string>
     <string name="sankakucomplex">Site: Sankaku</string>
+    <string name="danbooru">Site: Danbooru</string>
+    <string name="yande">Site: Yande.re</string>
+    <string name="konachan">Site: Konachan</string>
+    <string name="mangadex">Site: MangaDex</string>
+    <string name="manga">Site: Manga</string>
     <string name="imageSearch">Image Search</string>
     <string name="nijie">Nijie</string>
     <string name="nico">Nico Nico</string>
-    <string name="isNull">Invalid Data</string>
+    <string name="isNull" translatable="false">#@$%#@$%</string>
     <string name="unknown_title">Unknown Title</string>
     <string name="unknown_site">Site: Unknown</string>
     <string name="about">About</string>
-    <string name="version">Version 1.0</string>
+    <string name="version" translatable="false">Version 2.0</string>
     <dimen name="guideline2">266dp</dimen>
     <string name="network_error">Network Error, Please retry</string>
     <string name="explain_card">All search features are provide by SauceNao API, not this app.\nIf you love this app, Please consider donate to SauceNao.</string>
@@ -39,5 +44,11 @@
     <string name="github" translatable="false">Github</string>
     <string name="github_detail">Fork the project on Github</string>
     <string name="how_to_use">How to use</string>
-    <string name="how_to_use_detail">·Select a picture or picture link, and select \"Image Search\" in the share menu\n·Press the upload button to select a picture</string>
+    <string name="how_to_use_detail">·Select a picture or picture link, and select \"Image Search\" in the share menu\n·Click 🔍 enter image link\n·Press the upload button to select a picture</string>
+    <string name="url" translatable="false">URL</string>
+    <string name="Link" translatable="false">link</string>
+    <string name="input_link_here">input link here</string>
+    <string name="bottom_about" translatable="false">Designed by Yinghao Wu in China</string>
+    <string name="please_input_link">please input link</string>
+    <string name="input_link">Input Link</string>
 </resources>

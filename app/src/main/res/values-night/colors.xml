@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#33000000</color>
     <color name="colorAccent">#FFC400</color>
     <color name="lightColorPrimary">#33000000</color>
+    <color name="navigationBar">#FF303030</color>
+    <color name="white">#CCCCCC</color>
 </resources>

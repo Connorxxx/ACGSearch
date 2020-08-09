@@ -6,4 +6,9 @@
         android:id="@+id/menu_about"
         android:title="@string/about"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_link"
+        android:icon="@drawable/ic_link"
+        android:title="@string/Link"
+        app:showAsAction="always" />
 </menu>

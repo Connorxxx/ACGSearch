@@ -1,8 +1,8 @@
 package com.yinghaowu.saucenaosearch.logic.model
 
-data class JsonFeeds(
+data class SauceNaoResponse(
     val header: Header,
-    val results: ArrayList<Result>
+    val results: List<Result>
 )
 
 data class Header(
@@ -34,7 +34,7 @@ data class HeaderX(
 )
 
 data class Data(
-    val ext_urls: List<String>,
+    var ext_urls: List<String>,
     val title: String,
     val member_name: String, // pixiv
     val member_id: Int, // pixiv_id
@@ -44,5 +44,6 @@ data class Data(
     val sankaku_id: Int, // sankaku
     val source: String,
     val author_name: String,
-    val part: String?
+    val part: String?,
+    val author: String
 )
