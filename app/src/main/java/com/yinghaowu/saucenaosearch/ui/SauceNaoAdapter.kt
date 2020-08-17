@@ -6,6 +6,8 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AlphaAnimation
+import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.browser.customtabs.CustomTabsIntent
@@ -34,12 +36,12 @@ class SauceNaoAdapter(private val ctx: Context, private val sauceList: List<Resu
             .inflate(R.layout.item_card, parent, false)
         val holder = ViewHolder(view)
         holder.itemView.setOnClickListener {
-            var openURI = ""
+
             val source = holder.source
             if (source != null) {
                 val sourceUri = source.toUri()
                 if (sourceUri.toString().startsWith("http")) {
-                    openURI = sourceUri.toString()
+                    val openURI = sourceUri.toString()
                     val builder = CustomTabsIntent.Builder()
                     builder.setToolbarColor(view.context.getColor(R.color.lightColorPrimary))
                     val customTabsIntent = builder.build()
@@ -79,6 +81,19 @@ class SauceNaoAdapter(private val ctx: Context, private val sauceList: List<Resu
     override fun getItemCount() = sauceList.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val animation =
+            AnimationUtils.loadAnimation(
+                ctx,
+                R.anim.anim_recycler_item_show
+            )
+        holder.itemView.startAnimation(animation)
+        val aa1 = AlphaAnimation(1.0f, 0.1f)
+        aa1.duration = 400
+        holder.imgMain.startAnimation(aa1)
+
+        val aa = AlphaAnimation(0.1f, 1.0f)
+        aa.duration = 400
+        holder.imgMain.startAnimation(aa)
         val result = sauceList[position]
         val format = ctx.getString(R.string.similarity)
         holder.imgMain.load(sauceList[position].header.thumbnail)

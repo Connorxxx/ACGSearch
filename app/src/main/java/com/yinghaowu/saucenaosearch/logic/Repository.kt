@@ -9,6 +9,7 @@ import com.yinghaowu.saucenaosearch.R
 import com.yinghaowu.saucenaosearch.logic.network.SauceNaoNetwork
 import kotlinx.coroutines.Dispatchers
 import okhttp3.MultipartBody
+import okhttp3.RequestBody
 import kotlin.coroutines.CoroutineContext
 
 object Repository {

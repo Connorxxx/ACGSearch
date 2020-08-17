@@ -9,7 +9,7 @@
     <string name="source_empty">空资源</string>
 
     <!--        SnackBar        -->
-    <string name="ip_exceeded_limit">错误，您的ip可能超过了单日200限制</string>
+    <string name="ip_exceeded_limit">网络错误，或者是您的ip可能超过了单日200限制</string>
     <string name="snack_server_errors">网络错误，请重试!</string>
     <string name="snack_wrong_url">错误的URL, 请检查.</string>
 

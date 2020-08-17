@@ -4,7 +4,6 @@ import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.os.Parcelable
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
@@ -23,7 +22,6 @@ import okhttp3.MediaType
 import okhttp3.MultipartBody
 import okhttp3.Request
 import okhttp3.RequestBody
-import java.io.ByteArrayOutputStream
 
 class MainActivity : AppCompatActivity() {
 
@@ -49,12 +47,12 @@ class MainActivity : AppCompatActivity() {
         viewModel.ptUrl = ptUrl
         viewModel.swipeRefreshLayout = swipeRefreshLayout
         swipeRefreshLayout.setColorSchemeResources(R.color.lightColorPrimary)
-        fab_upload.setOnClickListener {
+        fabUpload.setOnClickListener {
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"
             startActivityForResult(intent, fromAlbum)
         }
-        actionShare()
+        fabUploadResult()
         viewModel.resultLiveData.observe(this, Observer {
             val sauceNao = it.getOrNull()
             if (sauceNao != null) {
@@ -95,7 +93,7 @@ class MainActivity : AppCompatActivity() {
                 .addFormDataPart(
                     "file", "image.bmp", RequestBody.create(
                         MediaType.parse("image/*"),
-                        viewModel.uriToByteArray(viewModel.uri)
+                        viewModel.uriToByteArray()
                     )
                 ).build()
             viewModel.postSauceNao(multipartBody)
@@ -123,23 +121,24 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
-    private fun actionShare() {
+    private fun fabUploadResult() {
         when (intent.action) {
             Intent.ACTION_SEND -> {
                 if ("text/plain" == intent.type) {
                     swipeRefreshLayout.isRefreshing = true
-                    val imageUrl = viewModel.handleSendText(intent)
-                    viewModel.searchSauceNao(imageUrl!!)
+                    val imageUrl = viewModel.handleSendText(intent)!!
+                    viewModel.searchSauceNao(imageUrl)
                 } else if (intent.type?.startsWith("image/") == true) {
-                    val imageByteArray = viewModel.handleSendImage(intent)
                     swipeRefreshLayout.isRefreshing = true
-                    imgView.load(imageByteArray)
+                    val imageByteArray = viewModel.handleSendImage(intent)
+                    viewModel.uri = imageByteArray
+                    viewModel.coilByImage()
                     val multipartBody = MultipartBody.Builder()
                         .setType(MultipartBody.FORM)
                         .addFormDataPart(
                             "file", "image.bmp", RequestBody.create(
                                 MediaType.parse("image/*"),
-                                viewModel.uriToByteArray(imageByteArray)
+                                viewModel.uriToByteArray()
                             )
                         ).build()
                     viewModel.postSauceNao(multipartBody)

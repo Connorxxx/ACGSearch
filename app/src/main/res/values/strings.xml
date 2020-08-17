@@ -8,8 +8,8 @@
     <string name="source_empty">no source</string>
 
     <!--        SnackBar        -->
-    <string name="ip_exceeded_limit">Error, your IP may exceed the 200 limit per day</string>
-    <string name="snack_server_errors">Network error, please try again!</string>
+    <string name="ip_exceeded_limit">Network errors or your IP may exceed the 200 limit per day</string>
+    <string name="snack_server_errors">Network errors, please try again!</string>
     <string name="snack_wrong_url">Not supported URL.</string>
 
     <!--        others        -->

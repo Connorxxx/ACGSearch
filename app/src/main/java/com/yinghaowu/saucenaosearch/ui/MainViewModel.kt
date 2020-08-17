@@ -22,7 +22,9 @@ import com.yinghaowu.saucenaosearch.logic.Repository
 import com.yinghaowu.saucenaosearch.logic.model.Result
 import okhttp3.MultipartBody
 import okhttp3.Request
+import okhttp3.RequestBody
 import java.io.ByteArrayOutputStream
+
 class MainViewModel() : ViewModel() {
 
     lateinit var imm: InputMethodManager
@@ -47,7 +49,7 @@ class MainViewModel() : ViewModel() {
         searchLiveData.value = url
     }
 
-        fun postSauceNao(multipartBody: MultipartBody) {
+    fun postSauceNao(multipartBody: MultipartBody) {
         postLiveData.value = multipartBody
     }
 
@@ -56,9 +58,7 @@ class MainViewModel() : ViewModel() {
     }
 
     fun coilByImage() {
-        if (::uri.isInitialized) {
-            imgView.load(uri)
-        }
+        if (::uri.isInitialized) imgView.load(uri)
     }
 
     fun searchByUrl() {
@@ -112,7 +112,7 @@ class MainViewModel() : ViewModel() {
         imm.hideSoftInputFromWindow(ptUrl.windowToken, 0)
     }
 
-    fun uriToByteArray(uri: Uri): ByteArray {
+    fun uriToByteArray(): ByteArray {
         val imageInputStream = App.context.contentResolver.openInputStream(uri)
         val byteArrayOutputStream = ByteArrayOutputStream()
         imageInputStream.use { inputStream ->
