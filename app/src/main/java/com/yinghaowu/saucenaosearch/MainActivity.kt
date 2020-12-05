@@ -46,7 +46,12 @@ class MainActivity : AppCompatActivity() {
         viewModel.imgView = imgView
         viewModel.ptUrl = ptUrl
         viewModel.swipeRefreshLayout = swipeRefreshLayout
-        swipeRefreshLayout.setColorSchemeResources(R.color.lightColorPrimary)
+        swipeRefreshLayout.setColorSchemeResources(
+            R.color.google_blue,
+            R.color.google_green,
+            R.color.google_yellow,
+            R.color.google_red
+        )
         fabUpload.setOnClickListener {
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"
